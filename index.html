@@ -2,22 +2,38 @@
 layout: home
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<div class="container">
+   <div class="row">
+    <div class="col-md-2 col-sm-12 hidden-xs sidebar">
+      <h3>Navigation</h3>
+      <div class="row">
+        <div class="column-md-12 sidebar-content">
+          <nav>
+            <ul>
+              <li><a href="#">Navigation Link 1</a></li>
+              <li><a href="#">Navigation Link 2</a></li>
+              <li><a href="#">Navigation Link 3</a></li>
+          </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10 refugee-index">
+      <h3>Refugee Index</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <p><span class="index-fact">Percentage of refugees who are children:</span>
+          <span class="index-stat">51%</span><p>
+          <p><span class="index-fact">Number of people who flee their homes daily:</span>
+          <span class="index-stat">42,500</span><p>
+        </div>
+      </div>
+      <div class="row infographics">
+        <div class="col-md-12">
+          <h3>COOL INFOGRAPHICS!!!</h3>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+    {% include footer.html %}

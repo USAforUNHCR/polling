@@ -1,1 +1,42 @@
-@import 'variables';
+.sidebar-content{
+  text-align: center;
+}
+
+.sidebar{
+  text-align: center;
+  & h3{
+    text-align: center;
+  }
+}
+
+.refugee-index{
+  text-align: center;
+}
+
+nav{
+  text-align: center;
+  & ul{
+    margin: auto;
+    text-align: center;
+    & li{
+      display: inline;
+      margin-bottom: 5px;
+    }
+  }
+  @media screen and (min-width: 1000px){
+    max-width: 140px;
+    text-align: center;
+    margin: auto;
+    & ul{
+      list-style-type: none;
+      & li{
+        display: block;
+      }
+    }
+  }
+}
+
+.container{
+  padding: 3%;
+  box-sizing: border-box;
+}
