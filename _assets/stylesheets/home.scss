@@ -1,42 +1,35 @@
-.sidebar-content{
-  text-align: center;
-}
-
-.sidebar{
-  text-align: center;
-  & h3{
-    text-align: center;
-  }
-}
+body { padding-top: 70px; }
 
 .refugee-index{
   text-align: center;
-}
-
-nav{
-  text-align: center;
-  & ul{
-    margin: auto;
-    text-align: center;
-    & li{
-      display: inline;
-      margin-bottom: 5px;
-    }
-  }
-  @media screen and (min-width: 1000px){
-    max-width: 140px;
-    text-align: center;
-    margin: auto;
-    & ul{
-      list-style-type: none;
-      & li{
-        display: block;
-      }
-    }
-  }
+  font-family: 'Roboto Mono', sans-serif ;
 }
 
 .container{
   padding: 3%;
   box-sizing: border-box;
+}
+
+.index-fact{
+  font-size: 2em;
+  font-weight: 400;
+  vertical-align: middle;
+  transition: all .2s ease-in-out;
+}
+
+.index-stat{
+  font-size: 4em;
+  color: black;
+  -webkit-text-fill-color: #c7a402;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.signup-form{
+  border: solid 1px grey;
+  border-radius: 7px;
+  padding: 1em 4em 1em 4em;
+  width: 80%;
+  max-width: 300px;
+  margin: auto;
 }

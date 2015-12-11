@@ -1,36 +1,65 @@
 ---
 layout: home
----
+---  
+<nav class="navbar navbar-default navbar-fixed-top">
 
-<div class="container">
-   <div class="row">
-    <div class="col-md-2 col-sm-12 hidden-xs sidebar">
-      <h3>Navigation</h3>
-      <div class="row">
-        <div class="column-md-12 sidebar-content">
-          <nav>
-            <ul>
-              <li><a href="#">Navigation Link 1</a></li>
-              <li><a href="#">Navigation Link 2</a></li>
-              <li><a href="#">Navigation Link 3</a></li>
-          </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Refugee Data</a>
     </div>
-    <div class="col-md-10 refugee-index">
-      <h3>Refugee Index</h3>
+
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li><a href="#" data-type="unhcr">UNHCR Data</a></li>
+      <li><a href="#" data-type="hive">Hive Data</a></li>
+      <li><a href="#" data-type="refugee">Refugee Data</a></li>
+      <li><a href="#" data-type="all">show all</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+    <div class="col-md-12 refugee-index">
       <div class="row">
         <div class="col-md-12">
-          <p><span class="index-fact">Percentage of refugees who are children:</span>
-          <span class="index-stat">51%</span><p>
-          <p><span class="index-fact">Number of people who flee their homes daily:</span>
-          <span class="index-stat">42,500</span><p>
+          <div class="index-entry unhcr collapse in" >
+            <p class="index-fact">Number of people who flee their homes daily:</p>
+            <p class="index-stat">42,500</p>
+          </div>
+          <div class="index-entry hive collapse in">
+            <p class="index-fact">Percentage of refugees who are children:</p>
+            <p class="index-stat">51%</p>
+          </div>
         </div>
       </div>
       <div class="row infographics">
         <div class="col-md-12">
-          <h3>COOL INFOGRAPHICS!!!</h3>
+        </div> 
+      </div>
+      <div class="row signup">
+        <div class="col-md-12">
+          
+          <form class="signup-form" role="form">
+            <p>Sign up to receive more refugee data</p>
+            <div class="form-group">
+              <label for="name" >name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
         </div>
       </div>
     </div>
