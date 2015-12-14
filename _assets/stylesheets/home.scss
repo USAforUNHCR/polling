@@ -11,6 +11,7 @@ body { padding-top: 70px; }
 }
 
 .index-fact{
+  z-index: 4;
   font-size: 2em;
   font-weight: 400;
   vertical-align: middle;
@@ -18,9 +19,10 @@ body { padding-top: 70px; }
 }
 
 .index-stat{
+  z-index: 4;
   font-size: 4em;
-  color: black;
-  -webkit-text-fill-color: #c7a402;
+  color: white;
+  -webkit-text-fill-color: red;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
@@ -32,4 +34,29 @@ body { padding-top: 70px; }
   width: 80%;
   max-width: 300px;
   margin: auto;
+}
+
+.background-image{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0px;
+  left: 0px;
+}
+
+.overlay-image{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.index-entry{
+  position: relative;
+}
+
+.stat-container{
+
 }
