@@ -1,55 +1,41 @@
 ---
 layout: home
 ---  
-<nav class="navbar navbar-default navbar-fixed-top">
-
-  <div class="container-fluid">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+<nav class="navbar navbar-light bg-faded">
       <a class="navbar-brand" href="#">Refugee Data</a>
-    </div>
-
-  </div>
-
-  <div class="collapse navbar-collapse" id="navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li><a href="#" data-type="unhcr">UNHCR Data</a></li>
-      <li><a href="#" data-type="hive">Hive Data</a></li>
-      <li><a href="#" data-type="refugee">Refugee Data</a></li>
-      <li><a href="#" data-type="all">show all</a></li>
+      <ul class="nav navbar-nav">
+      <li class="nav-item"><a href="#" class="nav-link" data-type="unhcr">UNHCR Data</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" data-type="hive">Hive Data</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" data-type="refugee">Refugee Data</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" data-type="all">show all</a></li>
     </ul>
   </div>
 </nav>
   
 <div class="container">
     <div class="col-md-12 refugee-index">
-      <div class="row">
         <div class="col-md-12">
-          <div class="index-entry unhcr collapse in" >
-            <img class="background-image" src="/images/boat.jpg">
-            <img class="overlay-image" src="/images/line.svg">
-            <div class="stat-container">
-              <p class="index-fact">Number of people who flee their homes daily:</p>
-              <p class="index-stat">42,500</p>
+          <div class="grid">
+            <div class="index-entry unhcr grid-item">
+              <div class="stat-container">
+                <h4>Line chart</h4>
+                <div class="ct-chart ct-perfect-fourth" id="line-chart"></div>     
+              </div>
+            </div>
+            <div class="index-entry hive grid-item" >
+              <div class="stat-container">
+                <h4>Bi-polar bar chart</h4>
+                <div class="ct-chart ct-perfect-fourth" id="bi-polar"></div>
+              </div>
+            </div>
+            <div class="index-entry hive grid-item">
+              <h4>line with area, background image</h4>
+              <div class="ct-chart ct-perfect-fourth"></div>
             </div>
           </div>
-          <div class="index-entry hive collapse in">
-            <p class="index-fact">Percentage of refugees who are children:</p>
-            <p class="index-stat">51%</p>
-          </div>
         </div>
-      </div>
-      <div class="row infographics">
-        <div class="col-md-12">
-        </div> 
-      </div>
-      <div class="row signup">
+      
+      <div class="signup">
         <div class="col-md-12">
           
           <form class="signup-form" role="form">
